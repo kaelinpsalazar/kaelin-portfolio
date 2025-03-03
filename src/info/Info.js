@@ -2,8 +2,7 @@ import self from "../img/self.jpg"
 import smartGarden from "../img/smart-gardening.png"
 import tracker from "../img/tracker.png"
 import music from "../img/music_festival.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -36,20 +35,20 @@ export const info = {
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
-            emoji: '☕',
-            text: 'fueled by coffee'
+            emoji: '🌎',
+            text: 'avid traveler'
+        },
+        {
+            emoji: '📌',
+            text: 'based in denver'
         },
         {
             emoji: '🐶',
             text: "dog dad"
         },
         {
-            emoji: '🌎',
-            text: 'based in Denver'
-        },
-        {
-            emoji: "📧",
-            text: "kaelinpsalazar@gmail.com"
+            emoji: "📖",
+            text: "fantasy/sci-fi reader"
         }
     ],
     socials: [
@@ -63,6 +62,16 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
+        {
+            link: "mailto:kaelinpsalazar@gmail.com",
+            icon: "fa fa-envelope",
+            label: 'email'
+        },
+        {
+            link: "tel:+15022243791",  
+            icon: "fa fa-phone",
+            label: 'phone'
+        }
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
@@ -70,27 +79,27 @@ export const info = {
     bio: "My name is Kaelin Salazar, and I am a Software Developer based in Denver, Colorado. I graduated from the University of Kentucky with a B.S. in Environmental Sciences, and initially pursued a career in the chemistry field. After several years, I transitioned into a managerial role at a small startup in Boulder, where we produced organic dog treats. Now, I'm thrilled to have shifted to software development and am excited about the new opportunities ahead.",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['javascript','ruby on rails', 'react', 'ruby', 'html', 'css', 'cypress', 'tailwind' ],
+            exposedTo: ['nodejs']
         }
     ,
     hobbies: [
-        {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
-        },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
+        // {
+        //     label: 'reading',
+        //     emoji: '📖'
+        // },
+        // {
+        //     label: 'theater',
+        //     emoji: '🎭'
+        // },
+        // {
+        //     label: 'movies',
+        //     emoji: '🎥'
+        // },
+        // {
+        //     label: 'cooking',
+        //     emoji: '🌶'
+        // }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
     ],

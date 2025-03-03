@@ -28,6 +28,12 @@ const links = [
         name: 'Portfolio',
         to: 'portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'Resume',
+        to: 'https://docs.google.com/document/d/1oe8MhCG-etnAEDjEpHdeDM_Yd0C1vYeG/edit?tab=t.0',
+        external: true
+
     }
 ]
 
@@ -48,17 +54,26 @@ export default function Navbar({ darkMode, handleClick, active, setActive }) {
                 gap={{ xs: '2rem', md: '8rem' }}
                 textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
-                    <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
-                        sx={{ borderImageSource: info.gradient }}>
-                        <Link to={singlePage ? `#${link.to}` : `/${link.to}`}
-                        scroll={el => scrollWidthOffset(el)}
-                            smooth
-                            onClick={() => setActive(link.active)} className={Style.link}>
-                            {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
-                        </Link>
-                    </Box>
-                ))}
+    <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
+        sx={{ borderImageSource: info.gradient }}>
+        {link.external ? (
+            <a href={link.to} target="_blank" rel="noopener noreferrer" className={Style.link}>
+                <p style={{ padding: '0.5rem 0' }}>{link.name}</p>
+            </a>
+        ) : (
+            <Link to={singlePage ? `#${link.to}` : `/${link.to}`}
+                scroll={el => scrollWidthOffset(el)}
+                smooth
+                onClick={() => setActive(link.active)} 
+                className={Style.link}
+            >
+                {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
+                {link.type && <h1>{link.name}</h1>}
+            </Link>
+        )} {/* <== This closing parenthesis was missing */}
+    </Box>
+))}
+
                 <li>
                     <Toggler darkMode={darkMode} handleClick={handleClick} />
                 </li>
