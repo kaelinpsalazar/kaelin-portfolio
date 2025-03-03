@@ -27,7 +27,7 @@
     "sass": "^1.54.5",
     "typescript": "^4.7.4"
   },
-  "homepage": "https://yourusername.github.io/repository-name",
+  "homepage": "https://yourusername.github.io/kaelin-portfolio",
   "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
