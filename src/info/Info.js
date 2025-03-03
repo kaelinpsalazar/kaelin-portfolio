@@ -79,27 +79,26 @@ export const info = {
     bio: "My name is Kaelin Salazar, and I am a Software Developer based in Denver, Colorado. I graduated from the University of Kentucky with a B.S. in Environmental Sciences, and initially pursued a career in the chemistry field. After several years, I transitioned into a managerial role at a small startup in Boulder, where we produced organic dog treats. Now, I'm thrilled to have shifted to software development and am excited about the new opportunities ahead.",
     skills:
         {
-            proficientWith: ['javascript','ruby on rails', 'react', 'ruby', 'html', 'css', 'cypress', 'tailwind' ],
-            exposedTo: ['nodejs']
+            proficientWith: ['javascript','ruby on rails', 'react', 'ruby','typescript', 'cypress', 'tailwind css' ],
         }
     ,
     hobbies: [
-        // {
-        //     label: 'reading',
-        //     emoji: '📖'
-        // },
-        // {
-        //     label: 'theater',
-        //     emoji: '🎭'
-        // },
-        // {
-        //     label: 'movies',
-        //     emoji: '🎥'
-        // },
-        // {
-        //     label: 'cooking',
-        //     emoji: '🌶'
-        // }
+        {
+            label: 'reading',
+            emoji: '📖'
+        },
+        {
+            label: 'golf',
+            emoji: '🏌️‍♂️'
+        },
+        {
+            label: 'movies',
+            emoji: '🎥'
+        },
+        {
+            label: 'cooking',
+            emoji: '🌶'
+        }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
